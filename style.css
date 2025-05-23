@@ -1,0 +1,114 @@
+body{
+  font-family: Roboto;
+    display: flex;            
+  justify-content: center;   
+  align-items: center; 
+}
+p {
+  color: rgb(4, 69, 5);
+}
+label {
+  color: rgb(4, 69, 5);
+}
+
+.circular-progress {
+  --progress: 60;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#4caf50 calc(var(--progress) * 1%), #e0e0e0 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.progress-value {
+  position: absolute;
+}
+
+#container{
+border: 1px gray solid;
+border-radius: 30px;
+padding: 20px;
+ max-width: 500px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 500px) {
+  #container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+#input-wrapper{
+  width: 30px;
+display: grid;
+grid-template-rows: 20px 30px;
+margin-bottom: 5px;
+}
+#Update-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 180px;
+  background-color: rgb(4, 69, 5);
+  color: wheat;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#Update-button:hover {
+  background-color: rgb(23, 120, 25);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#Update-button:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#Checklist{
+  background-color: lightgray ;
+  padding-left: 10px;
+  padding-top: 10px;
+padding-bottom: 1px;
+border-radius: 20px;
+width: 200px;
+height: 220px;
+margin-top: 10px;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+#name , #email , #password , #confirm-pass{
+ border-style: solid;
+ border-radius: 5px;
+}
+
+#name:focus,
+#email:focus,
+#password:focus,
+#confirm-pass:focus {
+  border-color: rgb(0, 221, 254);
+}
+#right{
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+   align-items: center;
+}
